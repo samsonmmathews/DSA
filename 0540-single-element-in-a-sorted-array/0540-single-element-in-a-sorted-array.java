@@ -1,7 +1,6 @@
 class Solution {
     public int singleNonDuplicate(int[] nums) {
         int low = 0, high = nums.length-1;
-        int leftSide = 0;
 
         while(low<high)
         {
