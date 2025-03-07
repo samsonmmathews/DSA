@@ -1,19 +1,14 @@
 class Solution {
     public int addDigits(int num) {
         int dig = -1, sum = 0;
-        if(num<10)
+
+        if(num == 0)
         {
-            return num;
+            return 0;
         }
-        while (num >= 10) {
-            sum = 0;
-            while (num != 0) {
-                dig = num % 10;
-                sum += dig;
-                num /= 10;
-            }
-            num = sum;
+        else
+        {
+            return ((num-1) % 9) + 1;
         }
-        return sum;
     }
 }
